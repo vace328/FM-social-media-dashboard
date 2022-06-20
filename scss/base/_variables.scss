@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+// ----- Font family-----
+$ffamily_primary: 'Inter';
+
+// ----- Font size-----
+$fsize_primary: 12px;
+
+// ----- Colors [LIGHT] -----
+:root {
+    --background: hsl(0, 0%, 100%);
+    --bg-top: hsl(225, 100%, 98%);
+    --bg-element: hsl(227, 47%, 96%);
+    --text-primary: hsl(230, 17%, 14%);
+    --text-secondary: hsl(228, 12%, 44%);        
+    // --box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.5);
+}
+  
+// ----- Colors [DARK] -----
+[data-theme="dark"] {
+    --background: hsl(230, 17%, 14%);
+    --bg-top: hsl(232, 19%, 15%);
+    --bg-element: hsl(228, 28%, 20%);
+    --text-primary: hsl(0, 0%, 100%);
+    --text-secondary: hsl(228, 34%, 66%);    
+}
+
+$highlight_neutral: hsl(163, 72%, 41%);
+$highlight_warning: hsl(356, 69%, 56%);
+
+$brand_f: hsl(208, 92%, 53%);
+$brand_t: hsl(203, 89%, 53%);
+$brand_i1: hsl(37, 97%, 70%);
+$brand_i2: hsl(329, 70%, 58%);
+$brand_yt: hsl(348, 97%, 39%);
+
+
+
+
+
+
+
+
+[data-theme="dark"] {
+    --primary-color: yellow;
+    // $text_light:hsla(0, 0%, 100%, 0.75);
+}
+

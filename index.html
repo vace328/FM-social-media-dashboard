@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Frontend Mentor | Social Media Dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Social Media Dashboard</h1>
+      <p>Total Followers: 23,004</p>
+    </div>
+
+    <div class="theme-mode-switch-container">
+      <label for="">Dark Mode</label>
+    </div>
+  </header>
+  <main>
+    <!-- ########## SUMMARY TOTAL ##########-->
+    <section class="summary">
+      <!-- Facebook -->
+      <div class="card card-highlights">
+        <div class="inner-wrapper">
+          <div class="card-section card-section_account">
+            <i class="fab fa-facebook-square"></i>
+            <p>@nathanf</p>
+          </div>
+          <div class="card-section card-section_followers">
+            <p>1987</p>
+            <p>Followers</p>
+          </div>
+          <div class="card-section card-section_growth">
+            <p class="up-down"><i class="fas fa-caret-up"></i>12 Today</p>
+          </div>
+        </div>
+      </div>
+      <!-- Twitter -->
+      <div class="card card-highlights">
+        <div class="inner-wrapper">
+          <div class="card-section card-section_account">
+            <i class="fab fa-twitter"></i>
+            <p>@nathanf</p>
+          </div>
+          <div class="card-section card-section_followers">
+            <p>1044</p>
+            <p>Followers</p>
+          </div>
+          <div class="card-section card-section_growth">
+            <p class="up-down"><i class="fas fa-caret-up"></i>99 Today</p>
+          </div>
+        </div>
+      </div>
+      <!-- Instagram -->
+      <div class="card card-highlights">
+        <div class="inner-wrapper">
+          <div class="card-section card-section_account">
+            <i class="fab fa-instagram"></i>
+            <p>@realnathanf</p>
+          </div>
+          <div class="card-section card-section_followers">
+            <p>11k</p>
+            <p>Followers</p>
+          </div>
+          <div class="card-section card-section_growth">
+            <p class="up-down"><i class="fas fa-caret-up"></i>1099 Today</p>
+          </div>
+        </div>
+      </div>
+      <!-- YouTube -->
+      <div class="card card-highlights">
+        <div class="inner-wrapper">
+          <div class="card-section card-section_account">
+           
+            <span class="yt"><i class="fab fa-youtube fa-fw"></i></span>
+            <p>Nathan F.</p>
+          </div>
+          <div class="card-section card-section_followers">
+            <p>8239</p>
+            <p>Subscribers</p>
+          </div>
+          <div class="card-section card-section_growth card-section_growth_down">
+            <p class="up-down"><i class="fas fa-caret-down"></i>144 Today</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ########## SUMMARY DAILY ##########-->
+    <section class="summary summary_daily">
+      <h2>Overview - Today</h2>
+
+      <div class="card card-daily">
+        <div class="inner-wrapper">
+          <div class="card-section card-section_metrics-item">
+            <p>Page Views</p>
+            <i class="fab fa-facebook-square"></i>
+          </div>
+          <div class="card-section card-section_data card-section_growth">
+            <p>87</p>
+            <p class="up-down"><i class="fas fa-caret-up"></i>3%</p>
+          </div>
+        </div>
+      </div>
+      <div class="card card-daily">
+        <div class="inner-wrapper">
+          <div class="card-section card-section_metrics-item">
+            <p>Likes</p>
+            <i class="fab fa-facebook-square"></i>
+          </div>
+          <div class="card-section card-section_data card-section_growth card-section_growth_down">
+            <p>52</p>
+            <p class="up-down"><i class="fas fa-caret-down"></i>2%</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-daily">
+        <div class="inner-wrapper">
+          <div class="card-section card-section_metrics-item">
+            <p>Likes</p>
+            <i class="fab fa-instagram"></i>
+          </div>
+          <div class="card-section card-section_data card-section_growth">
+            <p>5462</p>
+            <p class="up-down"><i class="fas fa-caret-up"></i>2257%</p>
+          </div>
+        </div>
+      </div>
+      <div class="card card-daily">
+        <div class="inner-wrapper">
+          <div class="card-section card-section_metrics-item">
+            <p>Profile Views</p>
+            <i class="fab fa-instagram"></i>
+          </div>
+          <div class="card-section card-section_data card-section_growth">
+            <p>52k</p>
+            <p class="up-down"><i class="fas fa-caret-up"></i>1375%</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-daily">
+        <div class="inner-wrapper">
+          <div class="card-section card-section_metrics-item">
+            <p>Retweets</p>
+            <i class="fab fa-twitter"></i>
+          </div>
+          <div class="card-section card-section_data card-section_growth">
+            <p>117</p>
+            <p class="up-down"><i class="fas fa-caret-up"></i>303%</p>
+          </div>
+        </div>
+      </div>
+      <div class="card card-daily">
+        <div class="inner-wrapper">
+          <div class="card-section card-section_metrics-item">
+            <p>Likes</p>
+            <i class="fab fa-twitter"></i>
+          </div>
+          <div class="card-section card-section_data card-section_growth">
+            <p>507</p>
+            <p class="up-down"><i class="fas fa-caret-up"></i>553%</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-daily">
+        <div class="inner-wrapper">
+          <div class="card-section card-section_metrics-item">
+            <p>Likes</p>
+            <span class="yt"><i class="fab fa-youtube fa-fw"></i></span>
+          </div>
+          <div class="card-section card-section_data card-section_growth">
+            <p>107</p>
+            <p class="up-down"><i class="fas fa-caret-down"></i>193%</p>
+          </div>
+        </div>
+      </div>
+      <div class="card card-daily">
+        <div class="inner-wrapper">
+          <div class="card-section card-section_metrics-item">
+            <p>Total Views</p>
+            <span class="yt"><i class="fab fa-youtube fa-fw"></i></span>
+          </div>
+          <div class="card-section card-section_data card-section_growth">
+            <p>1407</p>
+            <p class="up-down"><i class="fas fa-caret-down"></i>12%</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
