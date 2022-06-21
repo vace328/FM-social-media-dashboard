@@ -4,6 +4,10 @@
 @import "base/variables";
 @import "base/typography"; 
 
+/*----------  components
+------------------------------------------------------------------------------*/
+@import "components/buttons";
+
 /*----------  layout
 ------------------------------------------------------------------------------*/
 @import "layout/header";    
@@ -25,13 +29,14 @@ body {
         width: 100%;
         background-color: var(--bg-top);
         z-index: -1;
+        border-bottom-left-radius: 24px;
+        border-bottom-right-radius: 24px;
     }  
 }
 
 main {
-    // width: 100%;
-    // padding: 0px 163px 0 163px;
-    width: 1114px;
+    padding: 0px 163px 0 163px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 .summary {
@@ -44,8 +49,11 @@ main {
 .card {
     flex: 0 0 255px;
     background-color: var(--bg-element);
-    border-radius: 5px;        
-    // margin-bottom: 40px;
+    border-radius: 5px;  
+    cursor: pointer;
+    &:hover {
+        background-color: var(--bg-element-active);
+    }    
 }
 .inner-wrapper {
     padding: 31px 0px 24px 0px;
@@ -85,15 +93,13 @@ main {
     
     p {
        font-size: 12px;
-       font-weight: 700;        
-    //    padding-left: 10px;
+       font-weight: 700;
     }
 }
 i.fab {
     font-size: 22px;
     padding-left: 8px;
     padding-right: 8px;
-    // margin-right: 5px;
 }
 .fa-facebook-square {
     color: $brand_f;
@@ -104,13 +110,11 @@ i.fab {
 .fa-instagram {
     background: rgb(253,196,104);
     background: linear-gradient(90deg, rgba(253,196,104,1) 0%, rgba(223,73,150,1) 100%);
-    // color: $brand_i1;
     background-clip: text;
     -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 i.fa-youtube {
-    // color: $brand_yt;        
     color: var(--bg-element);  
     font-size: 12px;
     padding: unset;      
@@ -202,11 +206,39 @@ i.fa-youtube {
     padding: 25px;
 }
 
-@media screen and (max-width: 1190px) {
-    // main {
-    //     width: 720px;
-    // }
+@media screen and (max-width: 1390px) {
+    main {
+        padding: 0px 50px 0 50px;
+    }
+    .card {
+        margin: 0 12px 24px 12px;        
+    }
     .summary {
         justify-content: center;
+    }
+}
+@media screen and (max-width: 1390px) {   
+    .card {
+        flex-basis: 325px;        
+    }   
+}
+@media screen and (max-width: 660px) {
+    body::before {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    main {
+        padding: 0px 5px 0 5px;
+        margin-top: 70px;
+    }    
+    .summary {
+        margin-bottom: 25px;
+    }
+    .summary_daily h2 {
+        padding-left: 22px;   
+        margin-bottom: 27px;     
+    }
+    .card-daily {
+        margin-bottom: 16px;
     }
 }

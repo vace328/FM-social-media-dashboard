@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,14 +15,19 @@
 </head>
 <body>
   <header>
-    <div>
+    <div class="header-left">
       <h1>Social Media Dashboard</h1>
       <p>Total Followers: 23,004</p>
     </div>
 
-    <div class="theme-mode-switch-container">
-      <label for="">Dark Mode</label>
+    <div class="header-right theme-mode-switch-container">
+      <span class="toggle-text">Dark Mode</span>
+      <label class="theme-switch">
+        <input type="checkbox">
+        <div class="slider round"></div>
+      </label>
     </div>
+
   </header>
   <main>
     <!-- ########## SUMMARY TOTAL ##########-->
@@ -79,7 +84,7 @@
       <div class="card card-highlights">
         <div class="inner-wrapper">
           <div class="card-section card-section_account">
-           
+
             <span class="yt"><i class="fab fa-youtube fa-fw"></i></span>
             <p>Nathan F.</p>
           </div>
@@ -179,7 +184,7 @@
             <p>Likes</p>
             <span class="yt"><i class="fab fa-youtube fa-fw"></i></span>
           </div>
-          <div class="card-section card-section_data card-section_growth">
+          <div class="card-section card-section_data card-section_growth card-section_growth_down">
             <p>107</p>
             <p class="up-down"><i class="fas fa-caret-down"></i>193%</p>
           </div>
@@ -191,7 +196,7 @@
             <p>Total Views</p>
             <span class="yt"><i class="fab fa-youtube fa-fw"></i></span>
           </div>
-          <div class="card-section card-section_data card-section_growth">
+          <div class="card-section card-section_data card-section_growth card-section_growth_down">
             <p>1407</p>
             <p class="up-down"><i class="fas fa-caret-down"></i>12%</p>
           </div>
@@ -204,5 +209,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+  <script src="script.js"></script>
 </body>
 </html>
